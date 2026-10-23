@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#F7F7F7"><svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect x="80" y="140" width="240" height="120" rx="60" fill="#141414"/><text x="200" y="218" text-anchor="middle" font-family="sans-serif" font-size="56" font-weight="700" fill="#D6D6D6">PS</text></svg></template>
+<script>
+(function(){var done=new WeakSet();function tryLoad(s){if(done.has(s)||!s.id)return;done.add(s);var u='assets/images/'+s.id+'.jpg',i=new Image();i.onload=function(){s.setAttribute('src',u)};i.src=u;}
+function scan(){document.querySelectorAll('image-slot').forEach(tryLoad)}
+new MutationObserver(scan).observe(document.documentElement,{childList:true,subtree:true});document.addEventListener('DOMContentLoaded',scan);})();
+</script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>PARKETAR STREGOL | Postavljanje, hoblovanje i lakiranje parketa</title>
+<meta name="description" content="PARKETAR STREGOL: postavljanje, hoblovanje, lakiranje i obnova parketa. Pošaljite upit i slike poda.">
+<meta property="og:title" content="PARKETAR STREGOL | Pod koji menja izgled celog prostora">
+<meta property="og:description" content="Postavljanje, hoblovanje, lakiranje i obnova parketa.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;display=swap">
+<script src="./image-slot.js"></script>
+<style>
+html,body{margin:0;padding:0;background:#F7F7F7;color:#141414;overflow-x:clip}
+body{font-family:'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+a{color:#141414;text-decoration:none}
+a:hover{color:#4A4A4A}
+::selection{background:#D6D6D6;color:#141414}
+input,select,textarea,button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid #4A4A4A;outline-offset:3px}
+h1,h2,h3,p{margin:0}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="position:relative;background:#F7F7F7;min-height:100vh">
+
+<div ref="{{ loaderRef }}" aria-hidden="true" style="position:fixed;inset:0;z-index:200;background:#F7F7F7;overflow:hidden;pointer-events:none">
+  <div data-l="dull" style="position:absolute;inset:0;opacity:0;background-color:#6B6B6B;background-image:repeating-linear-gradient(90deg, rgba(29,29,29,.24) 0 1px, transparent 1px 12.5vw), repeating-linear-gradient(90deg, rgba(52,52,52,.08) 0 1px, transparent 1px 5px, rgba(52,52,52,.05) 5px 7px, transparent 7px 11px), repeating-linear-gradient(90deg, rgba(0,0,0,.06) 0 12.5vw, rgba(255,255,255,.05) 12.5vw 25vw, rgba(0,0,0,.02) 25vw 37.5vw), linear-gradient(180deg, rgba(255,255,255,.04), rgba(0,0,0,.14))"></div>
+  <div data-l="polished" style="position:absolute;inset:0;clip-path:inset(0 100% 0 0);background-color:#4A4A4A;background-image:linear-gradient(105deg, rgba(242,242,242,0) 30%, rgba(242,242,242,.3) 48%, rgba(242,242,242,0) 64%), repeating-linear-gradient(90deg, rgba(39,39,39,.26) 0 1px, transparent 1px 12.5vw), repeating-linear-gradient(90deg, rgba(74,74,74,.1) 0 1px, transparent 1px 5px, rgba(74,74,74,.06) 5px 7px, transparent 7px 11px), repeating-linear-gradient(90deg, rgba(59,59,59,.08) 0 12.5vw, rgba(238,238,238,.07) 12.5vw 25vw, rgba(59,59,59,.03) 25vw 37.5vw), linear-gradient(180deg, rgba(249,249,249,.2), rgba(49,49,49,.12))"></div>
+  <div data-l="pad" style="position:absolute;left:0;top:18vh;height:64vh;width:clamp(70px,8vw,120px);border-radius:999px;opacity:0;background:linear-gradient(90deg, rgba(250,250,250,0), rgba(250,250,250,.85) 50%, rgba(250,250,250,0));box-shadow:0 0 90px 30px rgba(238,238,238,.45);filter:blur(2px)">
+    <div style="position:absolute;left:50%;top:6%;bottom:6%;width:1px;background:rgba(255,255,255,.9)"></div>
+  </div>
+  <div data-l="shine" style="position:absolute;top:-20%;bottom:-20%;left:0;width:34vw;transform:translateX(-60vw) skewX(-16deg);background:linear-gradient(90deg, rgba(255,255,255,0), rgba(252,252,252,.55), rgba(255,255,255,0))"></div>
+  <div style="position:absolute;left:clamp(20px,4vw,56px);right:clamp(20px,4vw,56px);bottom:clamp(20px,4vw,48px);display:flex;justify-content:space-between;align-items:flex-end;gap:16px;color:#141414">
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <span style="font-size:13px;font-weight:700;letter-spacing:.22em">PARKETAR STREGOL</span>
+      <span style="font-size:13px;font-weight:500;opacity:.75">Parket, hoblovanje i lakiranje</span>
+    </div>
+    <span data-l="count" style="font-size:clamp(40px,6vw,88px);font-weight:300;letter-spacing:-.04em;line-height:.8;font-variant-numeric:tabular-nums">000</span>
+  </div>
+</div>
+
+<div ref="{{ cursorRef }}" aria-hidden="true" style="position:fixed;left:0;top:0;width:22px;height:22px;border-radius:999px;border:1px solid rgba(40,40,40,.45);background:rgba(127,127,127,.10);pointer-events:none;z-index:300;opacity:0;transition:opacity .3s, border-color .3s;will-change:transform"></div>
+
+<header style="position:fixed;left:0;right:0;top:{{ navTop }};z-index:50;display:flex;justify-content:center;padding:0 clamp(12px,3vw,32px);transition:top .6s cubic-bezier(.22,1,.36,1)">
+  <nav aria-label="Glavna navigacija" style="width:100%;max-width:{{ navMax }};display:flex;align-items:center;justify-content:space-between;gap:20px;padding:{{ navPad }};border-radius:999px;background:{{ navBg }};box-shadow:{{ navShadow }};backdrop-filter:{{ navBlur }};-webkit-backdrop-filter:{{ navBlur }};transition:all .6s cubic-bezier(.22,1,.36,1)">
+    <a href="#top" aria-label="PARKETAR STREGOL, početna" style="display:flex;align-items:center;gap:10px;flex:none;font-size:14px;font-weight:700;letter-spacing:.16em;color:#141414;white-space:nowrap;transition:transform .5s cubic-bezier(.22,1,.36,1)" style-hover="transform:scale(1.03);color:#141414">
+      PARKETAR STREGOL
+    </a>
+    <sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:center;gap:clamp(16px,2.4vw,34px);font-size:14px;font-weight:500">
+        <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="5">
+          <a href="{{ l.href }}" data-hov="" style="position:relative;display:flex;flex-direction:column;gap:3px;color:#141414;padding:6px 0">
+            {{ l.label }}
+            <span data-tf="scaleX(1)" style="height:1px;background:#4A4A4A;transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.22,1,.36,1)"></span>
+          </a>
+        </sc-for>
+      </div>
+      <a href="#kontakt" data-hov="" data-mag="" style="display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 8px 0 20px;border-radius:999px;background:#141414;color:#F7F7F7;font-size:14px;font-weight:600;transition:transform .5s cubic-bezier(.22,1,.36,1), background .4s" style-hover="background:#4A4A4A;color:#F7F7F7">
+        Zatražite ponudu
+        <span style="width:32px;height:32px;border-radius:999px;background:#F7F7F7;color:#141414;display:grid;place-items:center">
+          <svg data-tf="translateX(2px)" style="transition:transform .5s cubic-bezier(.22,1,.36,1)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </span>
+      </a>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+      <button type="button" onClick="{{ toggleMenu }}" aria-label="Meni" aria-expanded="{{ menuOpen }}" style="width:48px;height:48px;border-radius:999px;border:1px solid rgba(40,40,40,.14);background:#FFFFFF;display:grid;place-items:center;cursor:pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="4" x2="20" y1="9" y2="9"></line><line x1="4" x2="20" y1="15" y2="15"></line></svg>
+      </button>
+    </sc-if>
+  </nav>
+</header>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:fixed;inset:0;z-index:80;background:#F7F7F7;display:flex;flex-direction:column;padding:20px 20px 32px">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 6px 6px 14px">
+      <span style="display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;letter-spacing:.16em"><span style="width:30px;height:30px;border-radius:10px;background-color:#4A4A4A;background-image:repeating-linear-gradient(90deg, rgba(40,40,40,.3) 0 1px, transparent 1px 7px), linear-gradient(135deg, rgba(242,242,242,.35), rgba(40,40,40,.15))"></span>PARKETAR STREGOL</span>
+      <button type="button" onClick="{{ closeMenu }}" aria-label="Zatvori meni" style="width:48px;height:48px;border-radius:999px;border:1px solid rgba(40,40,40,.14);background:#FFFFFF;display:grid;place-items:center;cursor:pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      </button>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:0 14px">
+      <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="5">
+        <a href="{{ l.href }}" onClick="{{ closeMenu }}" style="display:flex;align-items:baseline;gap:16px;font-size:44px;font-weight:500;letter-spacing:-.04em;color:#141414;padding:6px 0">
+          <span style="font-size:13px;font-weight:600;letter-spacing:.1em;color:#4A4A4A">{{ l.num }}</span>{{ l.label }}
+        </a>
+      </sc-for>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <a href="#kontakt" onClick="{{ closeMenu }}" style="height:58px;border-radius:999px;background:#141414;color:#F7F7F7;display:flex;align-items:center;justify-content:center;font-weight:600">Zatražite ponudu</a>
+      <a href="https://www.instagram.com/parketar_stregol/" target="_blank" rel="noopener" style="height:58px;border-radius:999px;border:1px solid rgba(40,40,40,.16);display:flex;align-items:center;justify-content:center;gap:10px;font-weight:600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>@parketar_stregol</a>
+    </div>
+  </div>
+</sc-if>
+
+<main id="top">
+
+<section data-screen-label="01 Hero" aria-label="Uvod" style="padding:clamp(108px,14vh,150px) clamp(20px,4vw,56px) clamp(48px,6vw,80px);max-width:1480px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(32px,5vw,72px)">
+  <div style="flex:1 1 440px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:40px;padding-top:clamp(0px,3vw,40px)">
+    <div style="display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+      <div data-hero="" style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="display:inline-flex;align-items:center;gap:10px;padding:9px 16px 9px 12px;border-radius:999px;background:#FFFFFF;box-shadow:0 0 0 1px rgba(40,40,40,.08);font-size:12px;font-weight:700;letter-spacing:.16em">
+          <span style="width:8px;height:8px;border-radius:999px;background:#4A4A4A"></span>PARKETAR STREGOL
+        </span>
+        <span style="display:inline-flex;align-items:center;padding:9px 16px;border-radius:999px;font-size:13px;font-weight:500;color:#6B6B6B;box-shadow:0 0 0 1px rgba(40,40,40,.08)">Parket i podovi</span>
+      </div>
+      <h1 style="font-size:clamp(46px,7.4vw,118px);line-height:{{ heroLH }};letter-spacing:-.05em;font-weight:500;text-wrap:balance">
+        <span data-hero="" style="display:block">Pod koji menja</span>
+        <span data-hero="" style="display:block">izgled celog</span>
+        <span data-hero="" style="display:block;color:#4A4A4A">prostora.</span>
+      </h1>
+      <p data-hero="" style="max-width:440px;font-size:clamp(16px,1.3vw,19px);line-height:1.6;color:#6B6B6B;text-wrap:pretty">Postavljanje novog parketa ili obnova starog. Pošaljite slike poda i dogovorite šta mu treba.</p>
+      <div data-hero="" style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="#kontakt" data-hov="" data-mag="" style="display:inline-flex;align-items:center;gap:14px;height:58px;padding:0 10px 0 26px;border-radius:999px;background:#141414;color:#F7F7F7;font-size:15px;font-weight:600;transition:transform .5s cubic-bezier(.22,1,.36,1), background .4s" style-hover="background:#4A4A4A;color:#F7F7F7">
+          Zatražite ponudu
+          <span style="width:40px;height:40px;border-radius:999px;background:#F7F7F7;color:#141414;display:grid;place-items:center"><svg data-tf="translateX(3px)" style="transition:transform .5s cubic-bezier(.22,1,.36,1)" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+        </a>
+        <a href="#usluge" data-hov="" data-mag="" style="display:inline-flex;align-items:center;gap:12px;height:58px;padding:0 26px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.18);color:#141414;font-size:15px;font-weight:600;transition:transform .5s cubic-bezier(.22,1,.36,1), background .4s" style-hover="background:#EDEDED;color:#141414">
+          Pogledajte usluge
+          <svg data-tf="translateX(3px) rotate(45deg)" style="transition:transform .5s cubic-bezier(.22,1,.36,1)" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div data-hero="" style="display:flex;align-items:center;gap:14px;font-size:13px;color:#6B6B6B">
+      <span style="width:30px;height:48px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.2);display:flex;justify-content:center;padding-top:9px"><span style="width:4px;height:10px;border-radius:999px;background:#4A4A4A"></span></span>
+      Skrolujte
+    </div>
+  </div>
+
+  <div style="flex:1 1 460px;min-width:0;position:relative">
+    <div ref="{{ heroImgRef }}" data-hero="img" style="position:relative;height:clamp(440px,76vh,820px);border-radius:clamp(32px,4vw,56px);overflow:hidden;background:#EDEDED">
+      <div data-parallax="0.06" style="position:absolute;left:0;right:0;top:-7%;bottom:-7%">
+        <image-slot id="hero-main" shape="rect" placeholder="Glavna fotografija: završen parketni pod u enterijeru, sa profila @parketar_stregol (potrebno da klijent dostavi)"></image-slot>
+      </div>
+      <div style="position:absolute;left:16px;bottom:16px;display:flex;align-items:center;gap:12px;padding:8px 18px 8px 8px;border-radius:999px;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);pointer-events:none">
+        <span style="width:44px;height:44px;border-radius:14px;background-color:#4A4A4A;background-image:linear-gradient(105deg, rgba(242,242,242,0) 30%, rgba(242,242,242,.4) 50%, rgba(242,242,242,0) 70%), repeating-linear-gradient(90deg, rgba(74,74,74,.16) 0 1px, transparent 1px 4px, rgba(74,74,74,.08) 4px 6px, transparent 6px 9px)"></span>
+        <span style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px;font-weight:700">Prirodno drvo</span><span style="font-size:12px;color:#6B6B6B">Završna obrada po meri</span></span>
+      </div>
+    </div>
+    <div data-hero="" style="position:absolute;top:clamp(20px,4vw,48px);left:clamp(-28px,-2vw,12px);z-index:2">
+      <div data-parallax="-0.04" style="display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:#FFFFFF;box-shadow:0 18px 40px -18px rgba(40,40,40,.35);font-size:13px;font-weight:600;white-space:nowrap">
+        <span style="width:8px;height:8px;border-radius:999px;background:#4A4A4A"></span>Hoblovanje · Lakiranje · Postavljanje
+      </div>
+    </div>
+    <div data-hero="" style="position:absolute;right:clamp(12px,2vw,28px);bottom:clamp(84px,9vw,110px);z-index:2">
+      <div data-parallax="-0.08" style="display:flex;align-items:center;gap:12px;padding:12px 14px 12px 12px;border-radius:26px;background:#141414;color:#F7F7F7;box-shadow:0 20px 40px -18px rgba(40,40,40,.5)">
+        <span style="width:38px;height:38px;border-radius:999px;background:rgba(244,244,244,.12);display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></span>
+        <span style="display:flex;flex-direction:column;gap:2px;padding-right:6px"><span style="font-size:13px;font-weight:700">@parketar_stregol</span><span style="font-size:12px;opacity:.72">Radovi na Instagramu</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="02 Izjava" aria-label="Podovi i parket" style="padding:clamp(100px,14vw,200px) clamp(20px,4vw,56px);max-width:1480px;margin:0 auto">
+  <p style="font-size:clamp(40px,6.6vw,108px);line-height:1;letter-spacing:-.05em;font-weight:500">
+    <span style="display:block;overflow:hidden;padding-bottom:.08em"><span data-reveal="line" style="display:block">Pravo rešenje počinje</span></span>
+    <span style="display:block;overflow:hidden;padding-bottom:.08em"><span data-reveal="line" data-delay="120" style="display:block;color:#4A4A4A">od dobrog poda.</span></span>
+  </p>
+  <div style="margin-top:clamp(48px,6vw,88px);display:flex;flex-wrap:wrap;gap:32px 64px;justify-content:space-between;align-items:flex-end">
+    <p data-reveal="up" data-delay="200" style="max-width:520px;font-size:clamp(17px,1.4vw,20px);line-height:1.6;color:#6B6B6B;text-wrap:pretty">Svaki prostor ima svoje zahteve. Izaberite uslugu prema stanju poda, izgledu koji želite i tome kako koristite prostor.</p>
+  </div>
+</section>
+
+<section id="usluge" data-screen-label="03 Usluge" style="padding:0 clamp(20px,4vw,56px) clamp(100px,12vw,180px);max-width:1480px;margin:0 auto">
+  <div ref="{{ svcPin }}" style="position:relative;height:{{ svcPinH }}">
+  <div style="position:{{ svcStickyPos }};top:0;height:{{ svcStickyH }};display:flex;flex-direction:column;justify-content:center;overflow:{{ svcStickyOv }};margin:0 {{ svcBleed }};padding:{{ svcStickyPad }}">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(36px,5vw,64px)">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <span data-reveal="up" style="align-self:flex-start;padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.14);font-size:12px;font-weight:700;letter-spacing:.14em">USLUGE</span>
+      <h2 data-reveal="up" data-delay="80" style="font-size:clamp(36px,4.8vw,76px);line-height:1;letter-spacing:-.045em;font-weight:500;max-width:760px;text-wrap:balance">Šta vašem podu treba?</h2>
+    </div>
+    <div data-reveal="up" data-delay="160" style="display:flex;flex-direction:column;gap:14px;max-width:340px"><p style="font-size:16px;line-height:1.6;color:#6B6B6B">Ako niste sigurni, pošaljite slike poda i opišite šta vam smeta.</p><sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}"><span style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;border:1px dashed #4A4A4A;color:#4A4A4A;font-size:12px;font-weight:600;background:rgba(127,127,127,.08)"><span style="width:6px;height:6px;border-radius:999px;background:#4A4A4A"></span>Spisak usluga: klijent treba da potvrdi</span></sc-if></div>
+  </div>
+  <div ref="{{ svcTrack }}" style="display:grid;grid-template-columns:{{ svcCols }};grid-auto-flow:{{ svcFlow }};grid-auto-columns:{{ svcAutoCols }};overflow-x:{{ svcOverflow }};scroll-snap-type:x mandatory;scrollbar-width:none;gap:clamp(16px,2vw,28px) clamp(16px,1.6vw,24px);padding-bottom:8px;will-change:transform">
+    <sc-for list="{{ services }}" as="s" hint-placeholder-count="4">
+      <div data-reveal="up" data-delay="{{ s.delay }}" style="scroll-snap-align:start;min-width:0">
+        <article data-hov="" data-lift="translateY(-6px)" style="display:flex;flex-direction:column;gap:18px;transition:transform .8s cubic-bezier(.22,1,.36,1)">
+          <div style="position:relative;aspect-ratio:4/5;border-radius:clamp(28px,3vw,40px);overflow:hidden;background:#EDEDED">
+            <div data-tf="scale(1.06)" style="position:absolute;inset:0;transition:transform 1.2s cubic-bezier(.22,1,.36,1)">
+              <image-slot id="svc-{{ s.id }}" shape="rect" placeholder="{{ s.ph }}"></image-slot>
+            </div>
+            <span style="position:absolute;top:16px;left:16px;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.9);font-size:12px;font-weight:700;letter-spacing:.08em;pointer-events:none">{{ s.num }}</span>
+            <div data-hi="" style="position:absolute;left:12px;right:12px;bottom:12px;padding:16px 18px;border-radius:24px;background:rgba(40,40,40,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#F7F7F7;font-size:14px;line-height:1.5;opacity:0;transform:translateY(16px);transition:opacity .6s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);pointer-events:none">{{ s.desc }}</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 6px 0 8px">
+            <h3 data-tf="translateX(6px)" style="font-size:clamp(19px,1.5vw,22px);font-weight:600;letter-spacing:-.02em;line-height:1.2;transition:transform .7s cubic-bezier(.22,1,.36,1)">{{ s.name }}</h3>
+            <span data-hb="" style="flex:none;width:44px;height:44px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.16);display:grid;place-items:center;transition:background .5s, color .5s">
+              <svg data-tf="rotate(45deg)" style="transition:transform .6s cubic-bezier(.22,1,.36,1)" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </span>
+          </div>
+        </article>
+      </div>
+    </sc-for>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section id="transformacija" data-screen-label="04 Pre i posle" style="padding:clamp(90px,11vw,160px) clamp(20px,4vw,56px);background:#EDEDED">
+  <div style="max-width:1480px;margin:0 auto">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:clamp(36px,5vw,60px)">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <span data-reveal="up" style="align-self:flex-start;padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.16);font-size:12px;font-weight:700;letter-spacing:.14em">OBNOVA PODOVA</span>
+        <h2 data-reveal="up" data-delay="80" style="font-size:clamp(36px,4.8vw,76px);line-height:1;letter-spacing:-.045em;font-weight:500;max-width:720px;text-wrap:balance">Stari parket, novi utisak.</h2>
+      </div>
+      <div data-reveal="up" data-delay="160" style="display:flex;flex-direction:column;gap:18px;max-width:380px">
+        <p style="font-size:16px;line-height:1.6;color:#6B6B6B">Dobro izabrana obrada može mnogo da promeni izgled starog drvenog poda. Prevucite liniju levo-desno i uporedite.</p>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:13px;font-weight:600">
+          <span style="padding:8px 14px;border-radius:999px;background:#FFFFFF">Pre</span>
+          <span style="width:18px;height:1px;background:#141414;opacity:.4"></span>
+          <span style="padding:8px 14px;border-radius:999px;background:#FFFFFF">Hoblovanje</span>
+          <span style="width:18px;height:1px;background:#141414;opacity:.4"></span>
+          <span style="padding:8px 14px;border-radius:999px;background:#FFFFFF">Lakiranje</span>
+          <span style="width:18px;height:1px;background:#141414;opacity:.4"></span>
+          <span style="padding:8px 14px;border-radius:999px;background:#141414;color:#F7F7F7">Posle</span>
+        </div>
+      </div>
+    </div>
+    <div data-reveal="clip">
+      <div ref="{{ baRef }}" style="position:relative;aspect-ratio:{{ baAspect }};border-radius:clamp(32px,4vw,56px);overflow:hidden;background:#D6D6D6;user-select:none">
+        <div style="position:absolute;inset:0"><image-slot id="ba-before" shape="rect" placeholder="Fotografija PRE: istrošen, star pod (potrebno da klijent dostavi)"></image-slot></div>
+        <div ref="{{ baTop }}" style="position:absolute;inset:0;clip-path:inset(0 0 0 70%)"><image-slot id="ba-after" shape="rect" placeholder="Fotografija POSLE: isti pod nakon hoblovanja i lakiranja (potrebno da klijent dostavi)"></image-slot></div>
+        <span style="position:absolute;top:18px;left:18px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.9);font-size:13px;font-weight:700;pointer-events:none">Pre</span>
+        <span style="position:absolute;top:18px;right:18px;padding:9px 16px;border-radius:999px;background:#141414;color:#F7F7F7;font-size:13px;font-weight:700;pointer-events:none">Posle</span>
+        <div ref="{{ baHandle }}" role="slider" tabindex="0" aria-label="Uporedite pre i posle" aria-valuemin="0" aria-valuemax="100" onPointerDown="{{ baDown }}" onKeyDown="{{ baKey }}" style="position:absolute;top:0;bottom:0;left:70%;width:80px;margin-left:-40px;display:flex;justify-content:center;align-items:center;cursor:ew-resize;touch-action:none">
+          <span style="position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:#FFFFFF;box-shadow:0 0 20px rgba(0,0,0,.2)"></span>
+          <span style="position:relative;width:56px;height:84px;border-radius:999px;background:#FFFFFF;box-shadow:0 16px 36px -14px rgba(40,40,40,.5);display:flex;align-items:center;justify-content:center;gap:2px;color:#141414">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:18px;display:flex"><span style="display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;border:1px dashed #4A4A4A;color:#4A4A4A;font-size:12px;font-weight:600;background:rgba(127,127,127,.08)"><span style="width:6px;height:6px;border-radius:999px;background:#4A4A4A"></span>Primer: klijent treba da dostavi fotografije pre / posle istog poda</span></div>
+    </sc-if>
+  </div>
+</section>
+
+<section id="pristup" data-screen-label="05 Pristup" style="padding:clamp(100px,13vw,190px) clamp(20px,4vw,56px);max-width:1480px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(48px,7vw,110px);align-items:center">
+  <div style="flex:1 1 420px;min-width:0;position:relative;padding-bottom:clamp(40px,6vw,80px);padding-right:clamp(24px,5vw,80px)">
+    <div data-reveal="clip" style="position:relative;aspect-ratio:4/5;border-radius:clamp(32px,4vw,56px);overflow:hidden;background:#EDEDED">
+      <div data-parallax="0.07" style="position:absolute;left:0;right:0;top:-8%;bottom:-8%"><image-slot id="about-main" shape="rect" placeholder="Fotografija: rad na parketu, hoblovanje ili postavljanje (potrebno da klijent dostavi)"></image-slot></div>
+    </div>
+    <div data-reveal="up" data-delay="250" style="position:absolute;right:0;bottom:0;width:44%;aspect-ratio:1/1;border-radius:clamp(26px,3vw,40px);overflow:hidden;background:#D6D6D6;box-shadow:0 0 0 8px #F7F7F7">
+      <image-slot id="about-detail" shape="rect" placeholder="Detalj: alat i drvo izbliza (potrebno da klijent dostavi)"></image-slot>
+    </div>
+  </div>
+  <div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+    <span data-reveal="up" style="align-self:flex-start;padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.14);font-size:12px;font-weight:700;letter-spacing:.14em">PRISTUP PODOVIMA</span>
+    <h2 style="font-size:clamp(36px,4.4vw,70px);line-height:1.02;letter-spacing:-.045em;font-weight:500">
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-reveal="line" style="display:block">Dobar rezultat počinje</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-reveal="line" data-delay="100" style="display:block;color:#4A4A4A">pravim pristupom.</span></span>
+    </h2>
+    <p data-reveal="up" data-delay="150" style="font-size:clamp(16px,1.25vw,18px);line-height:1.7;color:#6B6B6B;max-width:520px;text-wrap:pretty">Svaki parket i svaka podloga su različiti. Koja usluga ima smisla zavisi od trenutnog stanja poda, vrste drveta i izgleda koji želite.</p>
+    <ul data-reveal="up" data-delay="220" style="list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;max-width:520px">
+      <li style="display:flex;align-items:center;gap:14px;padding:12px 22px 12px 12px;border-radius:999px;background:#FFFFFF;box-shadow:0 0 0 1px rgba(40,40,40,.06);font-size:16px;font-weight:600"><span style="flex:none;width:40px;height:40px;border-radius:999px;background:#EDEDED;color:#4A4A4A;display:grid;place-items:center;font-size:12px;font-weight:700">01</span>Izbor odgovarajuće usluge</li>
+      <li style="display:flex;align-items:center;gap:14px;padding:12px 22px 12px 12px;border-radius:999px;background:#FFFFFF;box-shadow:0 0 0 1px rgba(40,40,40,.06);font-size:16px;font-weight:600"><span style="flex:none;width:40px;height:40px;border-radius:999px;background:#EDEDED;color:#4A4A4A;display:grid;place-items:center;font-size:12px;font-weight:700">02</span>Pažnja prema detaljima</li>
+      <li style="display:flex;align-items:center;gap:14px;padding:12px 22px 12px 12px;border-radius:999px;background:#FFFFFF;box-shadow:0 0 0 1px rgba(40,40,40,.06);font-size:16px;font-weight:600"><span style="flex:none;width:40px;height:40px;border-radius:999px;background:#EDEDED;color:#4A4A4A;display:grid;place-items:center;font-size:12px;font-weight:700">03</span>Završni izgled prilagođen prostoru</li>
+    </ul>
+  </div>
+</section>
+
+<section id="proces" data-screen-label="06 Proces" style="padding:0 clamp(20px,4vw,56px) clamp(100px,13vw,190px);max-width:1480px;margin:0 auto">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(36px,5vw,64px)">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <span data-reveal="up" style="align-self:flex-start;padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.14);font-size:12px;font-weight:700;letter-spacing:.14em">PROCES</span>
+      <h2 data-reveal="up" data-delay="80" style="font-size:clamp(36px,4.8vw,76px);line-height:1;letter-spacing:-.045em;font-weight:500;max-width:760px;text-wrap:balance">Od upita do gotovog poda</h2>
+    </div>
+  </div>
+  <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:{{ procCols }};gap:14px">
+    <sc-for list="{{ process }}" as="p" hint-placeholder-count="4">
+      <li data-reveal="up" data-delay="{{ p.delay }}">
+        <div data-hov="" data-lift="translateY(-4px)" style="height:100%;min-height:clamp(220px,20vw,280px);padding:clamp(26px,2.6vw,36px);border-radius:40px;background:#FFFFFF;box-shadow:0 0 0 1px rgba(40,40,40,.06);display:flex;flex-direction:column;justify-content:space-between;gap:36px;transition:transform .7s cubic-bezier(.22,1,.36,1), box-shadow .7s">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:clamp(44px,4.4vw,64px);font-weight:300;letter-spacing:-.05em;line-height:1;color:#4A4A4A">{{ p.num }}</span>
+            <span style="width:56px;height:8px;border-radius:999px;background:#EDEDED;overflow:hidden;display:flex"><span data-tf="scaleX(1)" style="flex:1;background:#4A4A4A;transform:scaleX({{ p.fill }});transform-origin:left;transition:transform .8s cubic-bezier(.22,1,.36,1)"></span></span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <h3 style="font-size:clamp(21px,1.7vw,25px);font-weight:600;letter-spacing:-.025em">{{ p.title }}</h3>
+            <p style="font-size:15px;line-height:1.6;color:#6B6B6B;max-width:340px">{{ p.desc }}</p>
+          </div>
+        </div>
+      </li>
+    </sc-for>
+  </ol>
+</section>
+
+<section id="radovi" data-screen-label="07 Radovi" style="padding:0 clamp(20px,4vw,56px) clamp(100px,13vw,190px);max-width:1480px;margin:0 auto">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(36px,5vw,64px)">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <span data-reveal="up" style="align-self:flex-start;padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.14);font-size:12px;font-weight:700;letter-spacing:.14em">DETALJI KOJI PRAVE RAZLIKU</span>
+      <h2 data-reveal="up" data-delay="80" style="font-size:clamp(36px,4.8vw,76px);line-height:1;letter-spacing:-.045em;font-weight:500;max-width:760px;text-wrap:balance">Šare, spojevi i završna obrada</h2>
+    </div>
+    <a data-reveal="up" data-delay="160" href="https://www.instagram.com/parketar_stregol/" target="_blank" rel="noopener" data-hov="" data-mag="" style="display:inline-flex;align-items:center;gap:12px;height:56px;padding:0 10px 0 24px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.18);font-size:15px;font-weight:600;color:#141414;transition:transform .5s cubic-bezier(.22,1,.36,1), background .4s" style-hover="background:#EDEDED;color:#141414">
+      Radovi na Instagramu
+      <span style="width:38px;height:38px;border-radius:999px;background:#141414;color:#F7F7F7;display:grid;place-items:center"><svg data-tf="rotate(45deg)" style="transition:transform .5s cubic-bezier(.22,1,.36,1)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+    </a>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat({{ galCols }},minmax(0,1fr));grid-auto-rows:{{ galRow }};grid-auto-flow:dense;gap:clamp(10px,1.4vw,20px)">
+    <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="6">
+      <figure data-reveal="clip" data-delay="{{ g.delay }}" style="margin:0;grid-column:{{ g.col }};grid-row:{{ g.row }};min-width:0">
+        <div data-hov="" style="position:relative;width:100%;height:100%;border-radius:clamp(26px,3vw,40px);overflow:hidden;background:#EDEDED">
+          <div data-tf="scale(1.045)" style="position:absolute;inset:0;transition:transform 1.4s cubic-bezier(.22,1,.36,1)">
+            <div data-parallax="0.04" style="position:absolute;left:0;right:0;top:-5%;bottom:-5%"><image-slot id="gal-{{ g.id }}" shape="rect" placeholder="{{ g.ph }}"></image-slot></div>
+          </div>
+          <figcaption data-hi="" style="position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 10px 10px 18px;border-radius:999px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;transform:translateY(14px);transition:opacity .6s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);pointer-events:none">
+            <span style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ g.cat }}</span><span style="font-size:12px;color:#6B6B6B">Ilustracija: zameniti stvarnom fotografijom</span></span>
+            <span style="flex:none;width:36px;height:36px;border-radius:999px;background:#141414;color:#F7F7F7;display:grid;place-items:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span>
+          </figcaption>
+        </div>
+      </figure>
+    </sc-for>
+  </div>
+</section>
+
+
+<section data-screen-label="09 Pre odluke" aria-label="Saveti pre odluke" style="padding:clamp(100px,13vw,190px) 0;max-width:1480px;margin:0 auto">
+  <div style="padding:0 clamp(20px,4vw,56px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(32px,4vw,56px)">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <span data-reveal="up" style="align-self:flex-start;padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.14);font-size:12px;font-weight:700;letter-spacing:.14em">PRE ODLUKE</span>
+      <h2 data-reveal="up" data-delay="80" style="font-size:clamp(36px,4.8vw,76px);line-height:1;letter-spacing:-.045em;font-weight:500;max-width:760px;text-wrap:balance">Pronađite rešenje za svoj pod.</h2>
+    </div>
+    <div data-reveal="up" data-delay="160" style="display:flex;gap:10px">
+      <button type="button" onClick="{{ testiPrev }}" aria-label="Prethodna kartica" data-hov="" style="width:56px;height:56px;border-radius:999px;border:none;box-shadow:inset 0 0 0 1px rgba(40,40,40,.18);background:transparent;display:grid;place-items:center;cursor:pointer;transition:background .4s" style-hover="background:#EDEDED">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg>
+      </button>
+      <button type="button" onClick="{{ testiNext }}" aria-label="Sledeća kartica" data-hov="" style="width:56px;height:56px;border-radius:999px;border:none;background:#141414;color:#F7F7F7;display:grid;place-items:center;cursor:pointer;transition:background .4s" style-hover="background:#4A4A4A">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </div>
+  <div ref="{{ testiRef }}" data-reveal="up" data-delay="200" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px clamp(20px,4vw,56px) 8px;scroll-padding:0 clamp(20px,4vw,56px)">
+    <sc-for list="{{ testimonials }}" as="t" hint-placeholder-count="4">
+      <figure style="margin:0;flex:none;width:clamp(290px,40vw,540px);scroll-snap-align:start;padding:clamp(28px,3vw,44px);border-radius:44px;background:#FFFFFF;box-shadow:0 0 0 1px rgba(40,40,40,.06);display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:clamp(300px,26vw,360px)">
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <span style="align-self:flex-start;padding:7px 13px;border-radius:999px;background:#EDEDED;font-size:12px;font-weight:700;letter-spacing:.08em">{{ t.num }}</span>
+          <p style="font-size:clamp(19px,1.6vw,24px);line-height:1.45;letter-spacing:-.015em;font-weight:500;color:#141414">{{ t.q }}</p>
+        </div>
+        <figcaption style="display:flex;align-items:center;gap:14px;font-size:15px;line-height:1.5;font-weight:600;color:#141414">
+          <span style="flex:none;width:44px;height:44px;border-radius:999px;background:#141414;color:#F7F7F7;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>{{ t.a }}
+        </figcaption>
+      </figure>
+    </sc-for>
+  </div>
+</section>
+
+<section data-screen-label="10 Poziv" aria-label="Zatražite ponudu" style="padding:0 clamp(12px,2vw,28px)">
+  <div data-reveal="clip" style="max-width:1560px;margin:0 auto">
+    <div style="position:relative;overflow:hidden;border-radius:clamp(36px,5vw,72px);padding:clamp(80px,11vw,170px) clamp(24px,6vw,96px);color:#F7F7F7;background-color:#262626;background-image:linear-gradient(105deg, rgba(231,231,231,0) 28%, rgba(231,231,231,.10) 46%, rgba(231,231,231,0) 62%), repeating-linear-gradient(90deg, rgba(0,0,0,.28) 0 1px, transparent 1px 9vw), repeating-linear-gradient(90deg, rgba(226,226,226,.045) 0 1px, transparent 1px 5px, rgba(226,226,226,.03) 5px 7px, transparent 7px 11px), repeating-linear-gradient(90deg, rgba(0,0,0,.08) 0 9vw, rgba(234,234,234,.04) 9vw 18vw, rgba(0,0,0,.03) 18vw 27vw)">
+      <div style="position:relative;max-width:980px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:clamp(28px,3vw,40px)">
+        <span style="padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(244,244,244,.3);font-size:12px;font-weight:700;letter-spacing:.14em">SLEDEĆI KORAK</span>
+        <h2 style="font-size:clamp(44px,7vw,112px);line-height:.96;letter-spacing:-.05em;font-weight:500;text-wrap:balance">Vreme je za bolji izgled vašeg poda.</h2>
+        <p style="max-width:460px;font-size:clamp(16px,1.3vw,19px);line-height:1.6;color:#D6D6D6">Opišite šta vam treba i pošaljite slike prostora.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+          <a href="#kontakt" data-hov="" data-mag="" style="display:inline-flex;align-items:center;gap:14px;height:60px;padding:0 10px 0 28px;border-radius:999px;background:#F7F7F7;color:#141414;font-size:15px;font-weight:600;transition:transform .5s cubic-bezier(.22,1,.36,1), background .4s" style-hover="background:#ffffff;color:#141414">
+            Zatražite ponudu
+            <span style="width:42px;height:42px;border-radius:999px;background:#141414;color:#F7F7F7;display:grid;place-items:center"><svg data-tf="translateX(3px)" style="transition:transform .5s cubic-bezier(.22,1,.36,1)" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+          </a>
+          <a href="https://www.instagram.com/parketar_stregol/" target="_blank" rel="noopener" data-hov="" data-mag="" style="display:inline-flex;align-items:center;gap:12px;height:60px;padding:0 28px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(244,244,244,.4);color:#F7F7F7;font-size:15px;font-weight:600;transition:transform .5s cubic-bezier(.22,1,.36,1), background .4s" style-hover="background:rgba(244,244,244,.12);color:#F7F7F7">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            Kontaktirajte nas
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" data-screen-label="11 Kontakt" style="padding:clamp(100px,13vw,190px) clamp(20px,4vw,56px);max-width:1480px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(48px,7vw,110px)">
+  <div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:clamp(28px,3vw,40px)">
+    <span data-reveal="up" style="align-self:flex-start;padding:8px 14px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(40,40,40,.14);font-size:12px;font-weight:700;letter-spacing:.14em">KONTAKT</span>
+    <h2 style="font-size:clamp(38px,4.8vw,76px);line-height:1;letter-spacing:-.045em;font-weight:500">
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-reveal="line" style="display:block">Recite nam šta</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-reveal="line" data-delay="90" style="display:block">želite da</span></span>
+      <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-reveal="line" data-delay="180" style="display:block;color:#4A4A4A">promenimo.</span></span>
+    </h2>
+    <div data-reveal="up" data-delay="200" style="display:flex;flex-direction:column;gap:10px;max-width:440px">
+      <a href="https://www.instagram.com/parketar_stregol/" target="_blank" rel="noopener" data-hov="" style="display:flex;align-items:center;gap:16px;padding:12px 22px 12px 12px;border-radius:999px;background:#FFFFFF;box-shadow:0 0 0 1px rgba(40,40,40,.06);color:#141414;transition:background .4s" style-hover="background:#EDEDED;color:#141414">
+        <span style="width:48px;height:48px;border-radius:999px;background:#141414;color:#F7F7F7;display:grid;place-items:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></span>
+        <span style="display:flex;flex-direction:column;gap:2px;flex:1"><span style="font-size:12px;color:#6B6B6B;font-weight:600">Instagram</span><span style="font-size:18px;font-weight:700;letter-spacing:-.01em">@parketar_stregol</span></span>
+        <svg data-tf="rotate(45deg)" style="transition:transform .5s cubic-bezier(.22,1,.36,1)" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+      </a>
+      <p style="padding:6px 0 0 6px;font-size:15px;line-height:1.6;color:#6B6B6B">Pošaljite upit preko forme ili poruku na Instagramu.</p>
+      <sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;padding-left:6px"><span style="align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;border:1px dashed #4A4A4A;color:#4A4A4A;font-size:12px;font-weight:600;background:rgba(127,127,127,.08)"><span style="width:6px;height:6px;border-radius:999px;background:#4A4A4A"></span>Telefon, e-mail i područje rada: klijent treba da dostavi</span></div>
+      </sc-if>
+    </div>
+  </div>
+  <div data-reveal="up" data-delay="120" style="flex:1 1 460px;min-width:0">
+    <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+      <form onSubmit="{{ onSubmit }}" style="padding:clamp(24px,3.6vw,48px);border-radius:clamp(36px,4vw,52px);background:#FFFFFF;box-shadow:0 30px 60px -40px rgba(40,40,40,.35), 0 0 0 1px rgba(40,40,40,.05);display:flex;flex-direction:column;gap:14px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px">
+          <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600;color:#6B6B6B">Ime i prezime
+            <input required="" name="ime" autocomplete="name" placeholder="Vaše ime" style="height:58px;padding:0 22px;border-radius:999px;border:1px solid rgba(40,40,40,.12);background:#F7F7F7;font-size:16px;color:#141414;outline:none;transition:border-color .3s, background .3s" style-focus="border-color:#4A4A4A;background:#ffffff"></input>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600;color:#6B6B6B">Broj telefona
+            <input required="" name="telefon" type="tel" autocomplete="tel" placeholder="06x xxx xxxx" style="height:58px;padding:0 22px;border-radius:999px;border:1px solid rgba(40,40,40,.12);background:#F7F7F7;font-size:16px;color:#141414;outline:none;transition:border-color .3s, background .3s" style-focus="border-color:#4A4A4A;background:#ffffff"></input>
+          </label>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600;color:#6B6B6B">E-mail (nije obavezno)
+          <input name="email" type="email" autocomplete="email" placeholder="vas@email.com" style="height:58px;padding:0 22px;border-radius:999px;border:1px solid rgba(40,40,40,.12);background:#F7F7F7;font-size:16px;color:#141414;outline:none;transition:border-color .3s, background .3s" style-focus="border-color:#4A4A4A;background:#ffffff"></input>
+        </label>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600;color:#6B6B6B">Potrebna usluga
+          <select name="usluga" style="height:58px;padding:0 22px;border-radius:999px;border:1px solid rgba(40,40,40,.12);background:#F7F7F7;font-size:16px;color:#141414;outline:none;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg, transparent 50%, #141414 50%), linear-gradient(135deg, #141414 50%, transparent 50%);background-position:calc(100% - 28px) 26px, calc(100% - 22px) 26px;background-size:6px 6px;background-repeat:no-repeat" style-focus="border-color:#4A4A4A">
+            <option value="">Izaberite uslugu</option>
+            <sc-for list="{{ services }}" as="s" hint-placeholder-count="4"><option value="{{ s.name }}">{{ s.name }}</option></sc-for>
+            <option value="Nisam siguran">Nisam siguran</option>
+          </select>
+        </label>
+        <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600;color:#6B6B6B">Opis posla
+          <textarea name="poruka" rows="4" placeholder="Opišite prostor, kvadraturu i stanje poda." style="padding:18px 22px;border-radius:28px;border:1px solid rgba(40,40,40,.12);background:#F7F7F7;font-size:16px;line-height:1.5;color:#141414;outline:none;resize:vertical;min-height:140px;transition:border-color .3s, background .3s" style-focus="border-color:#4A4A4A;background:#ffffff"></textarea>
+        </label>
+        <button type="submit" data-hov="" style="margin-top:8px;height:62px;border-radius:999px;border:none;background:#141414;color:#F7F7F7;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:14px;cursor:pointer;transition:background .4s" style-hover="background:#4A4A4A">
+          {{ submitLabel }}
+          <svg data-tf="translateX(4px)" style="transition:transform .5s cubic-bezier(.22,1,.36,1)" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </button>
+        <sc-if value="{{ hasFormMsg }}" hint-placeholder-val="{{ false }}">
+          <p role="status" style="font-size:14px;line-height:1.6;color:#4A4A4A;padding:4px 8px 0">{{ formMsg }} <a href="https://www.instagram.com/parketar_stregol/" target="_blank" rel="noopener" style="font-weight:700;color:#141414" style-hover="color:#4A4A4A">@parketar_stregol</a></p>
+        </sc-if>
+      </form>
+    </sc-if>
+    <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:clamp(32px,4vw,56px);border-radius:clamp(36px,4vw,52px);background:#FFFFFF;box-shadow:0 0 0 1px rgba(40,40,40,.05);display:flex;flex-direction:column;gap:18px;min-height:420px;justify-content:center">
+        <span style="width:64px;height:64px;border-radius:24px;background:#141414;color:#F7F7F7;display:grid;place-items:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span>
+        <h3 style="font-size:clamp(28px,3vw,40px);font-weight:500;letter-spacing:-.04em">Hvala na upitu. Vaša poruka je uspešno poslata.</h3>
+        <p style="font-size:16px;line-height:1.6;color:#6B6B6B;max-width:400px">Odgovor stiže na broj telefona ili e-mail koji ste ostavili.</p>
+        <button type="button" onClick="{{ resetForm }}" style="align-self:flex-start;height:48px;padding:0 22px;border-radius:999px;border:none;box-shadow:inset 0 0 0 1px rgba(40,40,40,.18);background:transparent;font-weight:600;cursor:pointer" style-hover="background:#EDEDED">Pošaljite novi upit</button>
+      </div>
+    </sc-if>
+  </div>
+</section>
+
+</main>
+
+<footer data-screen-label="12 Footer" style="background:#141414;color:#F7F7F7;padding:clamp(72px,9vw,130px) clamp(20px,4vw,56px) 28px;border-radius:clamp(36px,5vw,72px) clamp(36px,5vw,72px) 0 0">
+  <div style="max-width:1480px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(56px,7vw,100px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:48px">
+      <div data-reveal="up" style="flex:1 1 300px;max-width:380px;display:flex;flex-direction:column;gap:18px">
+        <span style="display:flex;align-items:center;gap:12px;font-size:16px;font-weight:700;letter-spacing:.16em"><span style="width:30px;height:30px;border-radius:10px;background-color:#4A4A4A;background-image:repeating-linear-gradient(90deg, rgba(40,40,40,.3) 0 1px, transparent 1px 7px), linear-gradient(135deg, rgba(242,242,242,.35), rgba(40,40,40,.15))"></span>PARKETAR STREGOL</span>
+        <p style="font-size:16px;line-height:1.6;color:#D6D6D6">Postavljanje, hoblovanje, lakiranje i obnova parketa.</p>
+      </div>
+      <div data-reveal="up" data-delay="80" style="display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,96px)">
+        <nav aria-label="Footer navigacija" style="display:flex;flex-direction:column;gap:12px;font-size:15px">
+          <span style="font-size:12px;font-weight:700;letter-spacing:.14em;color:#D6D6D6">NAVIGACIJA</span>
+          <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="5"><a href="{{ l.href }}" style="font-weight:500;color:#F7F7F7" style-hover="color:#4A4A4A">{{ l.label }}</a></sc-for>
+        </nav>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:15px">
+          <span style="font-size:12px;font-weight:700;letter-spacing:.14em;color:#D6D6D6">KONTAKT</span>
+          <a href="https://www.instagram.com/parketar_stregol/" target="_blank" rel="noopener" style="font-weight:500;color:#F7F7F7" style-hover="color:#4A4A4A">@parketar_stregol</a>
+          <a href="https://www.instagram.com/parketar_stregol/" target="_blank" rel="noopener" aria-label="Instagram profil @parketar_stregol" style="align-self:flex-start;width:48px;height:48px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(244,244,244,.3);display:grid;place-items:center;color:#F7F7F7;transition:background .4s, color .4s" style-hover="background:#4A4A4A;color:#F7F7F7"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+        </div>
+      </div>
+    </div>
+    <div style="overflow:hidden">
+      <div data-reveal="line" style="font-size:clamp(36px,9.6vw,160px);font-weight:600;letter-spacing:-.055em;line-height:.9;white-space:nowrap;color:#F7F7F7">PARKETAR STREGOL</div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#D6D6D6">
+      <span>© {{ year }} PARKETAR STREGOL</span>
+      <a href="#top" style="font-weight:600;color:#F7F7F7" style-hover="color:#4A4A4A">Nazad na vrh ↑</a>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showNotes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sadržaj&quot;},&quot;preloader&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Animacija&quot;},&quot;formEndpoint&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Forma&quot;}}">
+class Component extends DCLogic {
+  state = { scrolled: false, menuOpen: false, w: typeof window !== 'undefined' ? window.innerWidth : 1440, sent: false, formState: 'idle' };
+  rootRef = React.createRef(); loaderRef = React.createRef(); cursorRef = React.createRef(); heroImgRef = React.createRef();
+  baRef = React.createRef(); baTop = React.createRef(); baHandle = React.createRef();
+  hsRef = React.createRef(); svcPin = React.createRef(); svcTrack = React.createRef(); hsTrack = React.createRef(); testiRef = React.createRef();
+  E = 'cubic-bezier(.22,1,.36,1)';
+
+  componentDidMount() {
+    this.reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.onResize = () => this.setState({ w: window.innerWidth }, () => this.measureSvc());
+    this.onScroll = () => { if (this.tick) return; this.tick = true; requestAnimationFrame(() => { this.tick = false; this.frame(); }); };
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    const root = this.rootRef.current;
+    this.pEls = root ? [...root.querySelectorAll('[data-parallax]')] : [];
+    this.setBA(70);
+    this.setupReveals(); this.setupHover(); this.setupCursor(); this.setupCounts();
+    this.runLoader();
+    this.measureSvc(); setTimeout(() => this.measureSvc(), 300);
+    this.frame();
+  }
+  measureSvc() {
+    const tr = this.svcTrack.current; if (!tr) return;
+    tr.style.transform = '';
+    let dist = 0;
+    if (this.state.w < 760 && !this.reduced) {
+      const last = tr.lastElementChild;
+      if (last) dist = Math.max(0, Math.round(last.getBoundingClientRect().right - tr.getBoundingClientRect().left - tr.clientWidth));
+    }
+    if (dist !== this.state.svcDist) this.setState({ svcDist: dist }, () => this.frame()); else this.frame();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+    this.io && this.io.disconnect(); this.cio && this.cio.disconnect();
+    cancelAnimationFrame(this.craf);
+    document.documentElement.style.overflow = '';
+  }
+
+  runLoader() {
+    const root = this.rootRef.current, L = this.loaderRef.current, E = this.E;
+    if (!root) return;
+    const heroEls = [...root.querySelectorAll('[data-hero]')];
+    const anims = this.reduced ? [] : heroEls.map((el, i) => {
+      const img = el.getAttribute('data-hero') === 'img';
+      const a = el.animate(img ? [{ opacity: 0, transform: 'scale(1.04)' }, { opacity: 1, transform: 'scale(1)' }] : [{ opacity: 0, transform: 'translateY(30px)' }, { opacity: 1, transform: 'translateY(0)' }],
+        { duration: img ? 900 : 1000, delay: img ? 0 : i * 85, easing: E, fill: 'both' });
+      a.pause(); a.onfinish = () => a.cancel(); return a;
+    });
+    const playHero = () => anims.forEach(a => a.play());
+    if (!L || this.reduced || this.props.preloader === false) { if (L) L.style.display = 'none'; playHero(); return; }
+    const de = document.documentElement; de.style.overflow = 'hidden'; window.scrollTo(0, 0);
+    const q = s => L.querySelector('[data-l="' + s + '"]');
+    q('dull').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 420, easing: E, fill: 'both' });
+    const pol = { duration: 1050, delay: 240, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'both' };
+    q('polished').animate([{ clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)' }], pol);
+    q('pad').animate([{ transform: 'translateX(-50%)', opacity: 0, offset: 0 }, { opacity: 1, offset: 0.12 }, { opacity: 1, offset: 0.85 }, { transform: 'translateX(calc(100vw - 50%))', opacity: 0, offset: 1 }], pol);
+    q('shine').animate([{ transform: 'translateX(-60vw) skewX(-16deg)' }, { transform: 'translateX(160vw) skewX(-16deg)' }], { duration: 700, delay: 1200, easing: 'cubic-bezier(.5,0,.3,1)', fill: 'both' });
+    const cnt = q('count'), t0 = performance.now();
+    const tickC = now => { const p = Math.min(1, (now - t0) / 1450); const v = Math.round((1 - Math.pow(1 - p, 3)) * 100); cnt.textContent = String(v).padStart(3, '0'); if (p < 1) requestAnimationFrame(tickC); };
+    requestAnimationFrame(tickC);
+    setTimeout(() => {
+      const hi = this.heroImgRef.current; const vw = window.innerWidth, vh = window.innerHeight;
+      let clip = 'inset(30% 30% 30% 30% round 56px)';
+      if (hi) { const r = hi.getBoundingClientRect(); const rad = parseFloat(getComputedStyle(hi).borderRadius) || 48;
+        clip = 'inset(' + Math.max(0, r.top) + 'px ' + Math.max(0, vw - r.right) + 'px ' + Math.max(0, vh - Math.min(vh, r.bottom)) + 'px ' + Math.max(0, r.left) + 'px round ' + rad + 'px)'; }
+      const m = L.animate([{ clipPath: 'inset(0px 0px 0px 0px round 0px)' }, { clipPath: clip }], { duration: 750, easing: 'cubic-bezier(.76,0,.24,1)', fill: 'both' });
+      m.onfinish = () => {
+        const f = L.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 380, easing: E, fill: 'both' });
+        f.onfinish = () => { L.style.display = 'none'; de.style.overflow = ''; };
+      };
+      setTimeout(playHero, 420);
+    }, 1720);
+  }
+
+  setupReveals() {
+    const root = this.rootRef.current; if (!root || this.reduced) return;
+    const E = this.E; const map = new Map();
+    const els = [...root.querySelectorAll('[data-reveal]')];
+    els.forEach(el => {
+      const t = el.getAttribute('data-reveal'); const d = +(el.getAttribute('data-delay') || 0);
+      let kf, dur = 1050;
+      if (t === 'clip') { kf = [{ clipPath: 'inset(10% 7% 10% 7% round 64px)', opacity: 0.2, transform: 'translateY(30px)' }, { clipPath: 'inset(0% 0% 0% 0% round 0px)', opacity: 1, transform: 'translateY(0)' }]; dur = 1350; }
+      else if (t === 'line') { kf = [{ transform: 'translateY(110%)' }, { transform: 'translateY(0%)' }]; dur = 1150; }
+      else kf = [{ opacity: 0, transform: 'translateY(40px)' }, { opacity: 1, transform: 'translateY(0)' }];
+      const a = el.animate(kf, { duration: dur, delay: d, easing: E, fill: 'both' });
+      a.pause(); a.onfinish = () => a.cancel();
+      map.set(el, a);
+    });
+    this.io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { const a = map.get(e.target); a && a.play(); this.io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    els.forEach(el => this.io.observe(el));
+  }
+
+  setupHover() {
+    const root = this.rootRef.current; if (!root) return;
+    const PROPS = ['transform', 'opacity', 'background', 'color', 'boxShadow'];
+    const save = el => { if (!el._o) { el._o = {}; PROPS.forEach(p => el._o[p] = el.style[p]); } };
+    const restore = el => PROPS.forEach(p => el.style[p] = el._o[p]);
+    root.querySelectorAll('[data-hov]').forEach(card => {
+      const kids = [...card.querySelectorAll('[data-tf],[data-hi],[data-hb]')];
+      kids.forEach(save); save(card);
+      card.addEventListener('mouseenter', () => {
+        const lift = card.getAttribute('data-lift'); if (lift && !card.hasAttribute('data-mag')) card.style.transform = lift;
+        kids.forEach(k => {
+          if (k.hasAttribute('data-tf')) k.style.transform = k.getAttribute('data-tf');
+          if (k.hasAttribute('data-hi')) { k.style.opacity = '1'; k.style.transform = 'translateY(0)'; }
+          if (k.hasAttribute('data-hb')) { k.style.background = '#141414'; k.style.color = '#F7F7F7'; k.style.boxShadow = 'inset 0 0 0 1px #141414'; }
+        });
+      });
+      card.addEventListener('mouseleave', () => { if (!card.hasAttribute('data-mag')) restore(card); kids.forEach(restore); });
+    });
+    if (this.reduced || !window.matchMedia('(pointer: fine)').matches) return;
+    root.querySelectorAll('[data-mag]').forEach(el => {
+      el.addEventListener('mousemove', e => { const r = el.getBoundingClientRect(); const dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height / 2); el.style.transform = 'translate(' + (dx * 0.16).toFixed(1) + 'px,' + (dy * 0.26).toFixed(1) + 'px)'; });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+    });
+  }
+
+  setupCursor() {
+    const c = this.cursorRef.current;
+    if (!c || this.reduced || !window.matchMedia('(pointer: fine)').matches) return;
+    let x = -100, y = -100, cx = x, cy = y, s = 1, ts = 1;
+    window.addEventListener('mousemove', e => {
+      x = e.clientX; y = e.clientY; c.style.opacity = '1';
+      const t = e.target.closest && e.target.closest('input,textarea,select,a,button,[data-hov],[role="slider"]');
+      ts = !t ? 1 : t.matches('input,textarea,select') ? 0.4 : 2.2;
+    }, { passive: true });
+    document.addEventListener('mouseleave', () => { c.style.opacity = '0'; });
+    const loop = () => { cx += (x - cx) * 0.2; cy += (y - cy) * 0.2; s += (ts - s) * 0.16;
+      c.style.transform = 'translate3d(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px,0) translate(-50%,-50%) scale(' + s.toFixed(3) + ')';
+      this.craf = requestAnimationFrame(loop); };
+    loop();
+  }
+
+  setupCounts() {
+    const root = this.rootRef.current; if (!root) return;
+    const els = [...root.querySelectorAll('[data-count]')];
+    if (this.reduced) return;
+    els.forEach(el => { el.textContent = '0'; });
+    this.cio = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return; this.cio.unobserve(e.target);
+      const el = e.target, to = +el.getAttribute('data-count'), t0 = performance.now();
+      const step = now => { const p = Math.min(1, (now - t0) / 1700); el.textContent = String(Math.round((1 - Math.pow(1 - p, 4)) * to)); if (p < 1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    }), { threshold: 0.5 });
+    els.forEach(el => this.cio.observe(el));
+  }
+
+  matMove(dir) {
+    const el = this.hsTrack.current; if (!el) return;
+    const figs = [...el.querySelectorAll('figure')]; if (!figs.length) return;
+    const gap = figs[1] ? figs[1].offsetLeft - figs[0].offsetLeft : figs[0].offsetWidth + 20;
+    const max = el.scrollWidth - el.clientWidth;
+    const from = el.scrollLeft;
+    const base = this.matTarget != null && this.matAnim ? this.matTarget : from;
+    const to = Math.max(0, Math.min(max, Math.round(base / gap + dir) * gap));
+    if (to === from && !this.matAnim) { figs.forEach(f => { const c = f.querySelector('[data-mat]'); c && c.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(' + (-dir * 14) + 'px)' }, { transform: 'translateX(0)' }], { duration: 520, easing: this.E }); }); return; }
+    this.matTarget = to;
+    if (this.reduced) { el.scrollLeft = to; return; }
+    cancelAnimationFrame(this.matAnim);
+    el.style.scrollSnapType = 'none';
+    const start = performance.now(), dur = 950, s0 = el.scrollLeft;
+    const ease = p => p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+    const step = now => {
+      const p = Math.min(1, (now - start) / dur);
+      el.scrollLeft = s0 + (to - s0) * ease(p);
+      if (p < 1) this.matAnim = requestAnimationFrame(step);
+      else { this.matAnim = null; el.style.scrollSnapType = ''; }
+    };
+    this.matAnim = requestAnimationFrame(step);
+    const vw = el.clientWidth;
+    figs.forEach((f, i) => {
+      const c = f.querySelector('[data-mat]'); if (!c) return;
+      const x = f.offsetLeft - s0; if (x < -f.offsetWidth * 2 || x > vw + f.offsetWidth * 2) return;
+      const order = dir > 0 ? x : vw - x;
+      c.animate([
+        { transform: 'translateX(0) scale(1)' },
+        { transform: 'translateX(' + (dir * 22) + 'px) scale(.94)', offset: 0.4 },
+        { transform: 'translateX(0) scale(1)' }
+      ], { duration: 1050, delay: Math.max(0, order / vw) * 120, easing: 'cubic-bezier(.45,0,.2,1)' });
+    });
+  }
+
+  setBA(v) {
+    this.baPos = v;
+    if (this.baTop.current) this.baTop.current.style.clipPath = 'inset(0 0 0 ' + v.toFixed(2) + '%)';
+    if (this.baHandle.current) { this.baHandle.current.style.left = v.toFixed(2) + '%'; this.baHandle.current.setAttribute('aria-valuenow', Math.round(v)); }
+  }
+
+  frame() {
+    const s = window.scrollY > 30;
+    if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    const vh = window.innerHeight;
+    if (!this.reduced) {
+      (this.pEls || []).forEach(el => {
+        const r = el.parentElement.getBoundingClientRect(); if (r.bottom < -100 || r.top > vh + 100) return;
+        const k = +el.getAttribute('data-parallax'); const c = r.top + r.height / 2 - vh / 2;
+        el.style.transform = 'translate3d(0,' + (-c * k).toFixed(1) + 'px,0)';
+      });
+    }
+    const sp = this.svcPin.current, st = this.svcTrack.current, sd = this.state.svcDist || 0;
+    if (sp && st && sd > 0) { const r = sp.getBoundingClientRect(); const p = Math.min(1, Math.max(0, -r.top / sd));
+      st.style.transform = 'translate3d(' + (-p * sd).toFixed(1) + 'px,0,0)'; }
+    const b = this.baRef.current;
+    if (b && !this.baUser) { const r = b.getBoundingClientRect(); if (r.bottom > 0 && r.top < vh) {
+      const p = Math.min(1, Math.max(0, (vh * 0.85 - r.top) / (r.height * 0.8 + vh * 0.25)));
+      this.setBA(this.reduced ? 50 : 88 - p * 52); } }
+  }
+
+  renderVals() {
+    const { w, menuOpen, sent } = this.state;
+    const m = w < 760, t = w < 1080;
+    const s = this.state.scrolled || m; const pinOn = m && (this.state.svcDist || 0) > 0;
+    const services = [
+      ['Postavljanje parketa', 'Parket se postavlja u šemi koja odgovara prostoru. Način slaganja i završni izgled dogovaraju se pre početka.'],
+      ['Hoblovanje parketa', 'Brušenjem se skidaju istrošeni sloj, ogrebotine i stari lak. Pod je posle toga spreman za novu završnu obradu.'],
+      ['Lakiranje parketa', 'Lak štiti drvo i određuje kako će pod izgledati. Izbor zavisi od vrste drveta i stanja poda.'],
+      ['Obnova parketa', 'Stari parket često može da se obnovi umesto da se menja. Prvo se proceni stanje poda, pa se vidi šta ima smisla.']
+    ].map(([name, desc], i) => ({ id: i + 1, num: String(i + 1).padStart(2, '0'), name, desc, ph: 'Fotografija: ' + name.toLowerCase() + ' (potrebno da klijent dostavi)', delay: m ? 0 : (i % 4) * 90 }));
+    const process = [
+      ['Prvi upit', 'Opišite šta vam treba i, ako možete, pošaljite slike poda.'],
+      ['Procena', 'Razgovara se o stanju poda i o tome koja usluga ima smisla.'],
+      ['Dogovor o radovima', 'Pre početka se dogovaraju obim posla, detalji i uslovi.'],
+      ['Izvođenje i završna obrada', 'Radovi se izvode onako kako je dogovoreno.']
+    ].map(([title, desc], i) => ({ num: String(i + 1).padStart(2, '0'), title, desc, fill: ((i + 1) / 4).toFixed(3), delay: m ? 0 : (i % 4) * 100 }));
+    const gi = [
+      ['Fotografija: ceo prostor, završen pod', 'Celokupan prostor'],
+      ['Fotografija: dnevna soba', 'Postavljanje parketa'],
+      ['Detalj: spoj letvica', 'Detalj spoja'],
+      ['Detalj: lajsna uz zid', 'Lajsne'],
+      ['Detalj: struktura i lak', 'Završna obrada'],
+      ['Fotografija: široki kadar sobe', 'Hoblovanje i lakiranje']
+    ];
+    const spans = m ? [[2, 3], [1, 2], [1, 2], [2, 2], [1, 3], [1, 3]] : t ? [[6, 4], [3, 3], [3, 3], [2, 3], [4, 3], [6, 4]] : [[7, 5], [5, 3], [2, 2], [3, 2], [4, 4], [8, 4]];
+    const gallery = gi.map(([ph, cat], i) => ({ id: i + 1, ph: ph + ' (potrebno da klijent dostavi)', cat, col: 'span ' + spans[i][0], row: 'span ' + spans[i][1], delay: m ? 0 : (i % 3) * 110 }));
+    const materials = ['Struktura drveta', 'Šara parketa', 'Završna površina', 'Alat', 'Ruke majstora', 'Spoj i ivica'].map((cap, i) => ({ id: i + 1, num: String(i + 1).padStart(2, '0'), cap, ph: 'Krupni plan: ' + cap.toLowerCase() + ' (potrebno da klijent dostavi)', offset: i % 2 ? '48px' : '0px' }));
+    const testimonials = [
+      ['Pod je izgreban i izbledeo, ali letvice drže.', 'Obično pomaže hoblovanje i lakiranje.'],
+      ['Neke letvice su oštećene ili se odvajaju.', 'Prvo se proceni da li obnova ima smisla.'],
+      ['Prostor je nov ili menjate stari pod.', 'Tu dolazi u obzir postavljanje novog parketa.'],
+      ['Niste sigurni šta vašem podu treba?', 'Pošaljite slike poda i opišite problem.']
+    ].map(([q, a], i) => ({ q, a, num: String(i + 1).padStart(2, '0') }));
+    const scrollT = dir => { const el = this.testiRef.current; if (!el) return; const card = el.querySelector('figure'); el.scrollBy({ left: dir * ((card ? card.offsetWidth : 400) + 16), behavior: 'smooth' }); };
+    return {
+      rootRef: this.rootRef, loaderRef: this.loaderRef, cursorRef: this.cursorRef, heroImgRef: this.heroImgRef,
+      baRef: this.baRef, baTop: this.baTop, baHandle: this.baHandle, hsRef: this.hsRef, hsTrack: this.hsTrack, testiRef: this.testiRef,
+      isMobile: m, notMobile: !m, menuOpen,
+      toggleMenu: () => this.setState(st => ({ menuOpen: !st.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      showNotes: this.props.showNotes ?? true,
+      navLinks: [['Usluge', '#usluge'], ['Pristup', '#pristup'], ['Radovi', '#radovi'], ['Proces', '#proces'], ['Kontakt', '#kontakt']].map(([label, href], i) => ({ label, href, num: '0' + (i + 1) })),
+      navTop: s ? '10px' : '18px', navMax: s ? '1060px' : '1400px',
+      navPad: s ? '7px 7px 7px 18px' : '10px 10px 10px 22px',
+      navBg: s ? 'rgba(255,255,255,.78)' : 'rgba(255,255,255,0)',
+      navShadow: s ? '0 14px 34px -16px rgba(40,40,40,.28), 0 0 0 1px rgba(40,40,40,.06)' : '0 0 0 1px rgba(40,40,40,0)',
+      navBlur: s ? 'blur(18px) saturate(1.3)' : 'none',
+      services, process, gallery, materials, testimonials,
+      svcCols: m ? 'none' : 'repeat(auto-fill,minmax(min(100%,270px),1fr))',
+      svcFlow: m ? 'column' : 'row', svcAutoCols: m ? '76%' : 'auto', svcOverflow: m && !pinOn ? 'auto' : 'visible',
+      svcBleed: m ? '-20px' : '0', svcPin: this.svcPin, svcTrack: this.svcTrack,
+      svcPinH: pinOn ? 'calc(100vh + ' + this.state.svcDist + 'px)' : 'auto',
+      svcStickyPos: pinOn ? 'sticky' : 'relative', svcStickyH: pinOn ? '100vh' : 'auto',
+      svcStickyOv: pinOn ? 'hidden' : 'visible', svcStickyPad: m ? (pinOn ? '72px 20px 16px' : '0 20px') : '0',
+      heroLH: m ? '1.12' : '.94',
+      procCols: m ? 'minmax(0,1fr)' : t ? 'repeat(2,minmax(0,1fr))' : 'repeat(4,minmax(0,1fr))',
+      galCols: m ? 2 : t ? 6 : 12, galRow: m ? '96px' : t ? '110px' : 'clamp(64px,6.4vw,108px)',
+      baAspect: m ? '4 / 5' : '16 / 8',
+      baDown: e => {
+        e.preventDefault(); this.baUser = true; const b = this.baRef.current; if (!b) return;
+        const move = ev => { const r = b.getBoundingClientRect(); this.setBA(Math.min(98, Math.max(2, (ev.clientX - r.left) / r.width * 100))); };
+        const up = () => { window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up); };
+        window.addEventListener('pointermove', move); window.addEventListener('pointerup', up); move(e);
+      },
+      baKey: e => { const d = e.key === 'ArrowLeft' ? -4 : e.key === 'ArrowRight' ? 4 : 0; if (!d) return; e.preventDefault(); this.baUser = true; this.setBA(Math.min(98, Math.max(2, (this.baPos || 50) + d))); },
+      testiPrev: () => scrollT(-1), testiNext: () => scrollT(1),
+      matPrev: () => this.matMove(-1),
+      matNext: () => this.matMove(1),
+      sent, notSent: !sent,
+      onSubmit: e => {
+        e.preventDefault();
+        const ep = this.props.formEndpoint;
+        if (!ep) { this.setState({ formState: 'offline' }); return; }
+        this.setState({ formState: 'sending' });
+        fetch(ep, { method: 'POST', body: new FormData(e.target), headers: { Accept: 'application/json' } })
+          .then(r => { if (!r.ok) throw new Error(); this.setState({ sent: true, formState: 'idle' }); })
+          .catch(() => this.setState({ formState: 'error' }));
+      },
+      submitLabel: this.state.formState === 'sending' ? 'Šaljemo...' : 'Pošaljite upit',
+      hasFormMsg: this.state.formState === 'offline' || this.state.formState === 'error',
+      formMsg: this.state.formState === 'error' ? 'Slanje nije uspelo. Pokušajte ponovo ili nam pišite na Instagramu:' : 'Forma još nije povezana sa e-mailom. Do tada nam pišite na Instagramu:',
+      resetForm: () => this.setState({ sent: false, formState: 'idle' }),
+      year: new Date().getFullYear()
+    };
+  }
+}
+</script>
+</body>
+</html>
